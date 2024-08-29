@@ -1,8 +1,7 @@
 import {Address, beginCell, Cell, Contract, contractAddress, ContractProvider, Sender, SendMode} from '@ton/core';
 
 export type ProxyConfig = {
-    owner: Address;
-
+    owner: Address,
 };
 
 export function proxyConfigToCell(config: ProxyConfig): Cell {
